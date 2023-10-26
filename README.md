@@ -1,21 +1,20 @@
+# Ant Simulation in Processing
 
-## Ant Simulation in Processing: README
+## Introduction
 
-### Introduction
+This repository contains a simple ant simulation sketch written in Processing. It serves as an educational example for teaching generative design, object-oriented programming (OOP), animation basics, and event-driven programming. 
 
-This repository contains a simple ant simulation sketch written in Processing. This is a great beginner-level example to understand generative design, object-oriented programming (OOP) paradigms, animation basics, and event-driven programming.
-
-### How to Use
+## How to Use
 
 1. Install Processing from [Processing.org](https://processing.org/)
-2. Clone this repository or download the `.pde` file
+2. Clone this repository or download the `.pde` file.
 3. Open the `.pde` file in the Processing editor and click the "Run" button.
 
-### Structure Explanation
+## In-Depth Structure Explanation
 
-#### Class Definitions
+### Class Definitions and Object-Oriented Programming (OOP)
 
-The `Ant` class is an example of OOP. It allows us to encapsulate the properties (`x, y, size, c`) and behaviors (`move()`, `display()`) of an ant. 
+The `Ant` class demonstrates OOP by encapsulating the properties and behaviors of an ant.
 
 ```java
 class Ant {
@@ -26,18 +25,59 @@ class Ant {
 }
 ```
 
-#### Initialization and Constructors
+### Initialization and Constructors
 
-The `Ant` class constructor (`Ant(float inputX, float inputY)`) initializes the ant at a given `x, y` coordinate. This makes it flexible to place ants at different initial positions.
+The `Ant` class constructor allows for flexibility in setting the initial `x` and `y` positions for each ant object.
 
-#### Movement and Display Methods
+### Movement and Behavior
 
-The `move()` and `display()` methods define the ant's behavior. `move()` updates the ant's position, and `display()` shows it on the canvas.
+The `move()` method uses `random()` and `if` statements to give ants a random direction of movement.
 
-#### Arrays for Multiple Ants
+```java
+void move() {
+  int choice = int(random(2));
+  if (choice == 0) {
+    x += random(-3, 3);
+  } else {
+    y += random(-3, 3);
+  }
+  //...
+}
+```
 
-Using an array of `Ant` objects (`antHill`) is idiomatic to Processing and animation languages to manage multiple instances easily.
+### Displaying Ants
 
-#### Event-Driven Programming
+The `display()` method uses the Processing `fill` and `circle` functions to display each ant object on the screen.
 
-The `mousePressed()` and `keyPressed()` functions react to user input, changing ant properties or saving frames respectively.
+### Loops
+
+- `for (int i = 0; i<10; i+=1)`: Demonstrates a standard for-loop to initialize multiple ant objects.
+- `for (Ant ants : antHill)`: Demonstrates a for-each loop to iterate over each ant object for moving and displaying.
+
+### Data Structures
+
+The code utilizes an array (`antHill`) to manage multiple ant instances efficiently.
+
+### Randomness
+
+The `random()` function is extensively used for varying ant movements, sizes, and colors.
+
+### Event-Driven Programming
+
+- `mousePressed()`: Changes ant colors and sizes based on user mouse clicks.
+- `keyPressed()`: Saves the current frame when the 'S' key is pressed.
+
+```java
+void mousePressed() {
+  // ...
+  float r = random(128, 255);
+  // ...
+}
+
+void keyPressed() {
+  if (key == 's' || key == 'S') {
+    saveFrame();
+    exit();
+  }
+}
+```
