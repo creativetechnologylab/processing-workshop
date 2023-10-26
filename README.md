@@ -53,6 +53,7 @@ The `display()` method uses the Processing `fill` and `circle` functions to disp
 
 - `for (int i = 0; i<10; i+=1)`: Demonstrates a standard for-loop to initialize multiple ant objects.
 - `for (Ant ants : antHill)`: Demonstrates a for-each loop to iterate over each ant object for moving and displaying.
+- `antHill.length`: a more effecient way of getting the size of an array
 
 ### Data Structures
 
