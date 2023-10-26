@@ -1,8 +1,3 @@
-Certainly, I've integrated the section about using dot syntax for method calls into your existing README. I placed it right after the "Initialization and Constructors" section, as it seems to fit well there.
-
----
-
-```markdown
 # Ant Simulation in Processing
 
 ## Introduction
