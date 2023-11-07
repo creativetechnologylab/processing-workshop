@@ -17,6 +17,15 @@ class Ant {
   by storing it in long term memory. This is what we do when we say the x = inputX. We say the short-term
   memory inputX is stored in the long-term memory x. 
 
+  This only helps define the RELATIONSHIP beween class member variables (x) and constructor arguments (inputX).
+  The PURPOSE of constructor arguments is to create new ants from a template but with a little individuality.
+  For example, every ant , when it is created, will be made with the same size (10) and color(91,197,255).
+
+  An excercise would be to consider: 
+  a) how could we generatively set the ant size and color using random
+  b) how could we create some inputs for colour and size to define the ant at construction. 
+ 
+
   */
 
 
