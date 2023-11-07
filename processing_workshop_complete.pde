@@ -2,13 +2,13 @@
 class Ant {
   float x, y;
   float size;
-  color c;
+  color antColor;
   // Constructor: Initializes ant properties such as position and color
   Ant(float inputX, float inputY) {
     x = inputX;
     y = inputY;
     size = 10;
-    c = color(91, 197, 255);
+    antColor = color(91, 197, 255);
   }
 
   // move method: Defines the logic to update the ant's position
@@ -24,7 +24,7 @@ class Ant {
 
   // display method: Defines how the ant should be drawn on the canvas
   void display() {
-    fill(c);
+    fill(antColor);
     circle(x, y, size);
   }
 }
