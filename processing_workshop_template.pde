@@ -1,31 +1,54 @@
-// The Ant class encapsulates the properties and behaviors of an ant.
+// ------------------------------------------------------
+ 
 class Ant {
 
-  // Constructor: Initializes ant properties such as position and color
-  Ant() {
-  }
+  Ant() {// -- code below this line
+  
 
-  // move method: Defines the logic to update the ant's position
-  void move() {
-  }
+  } // -- don't delete this bracket
 
-  // display method: Defines how the ant should be drawn on the canvas
-  void display() {
-  }
-}
 
-// setup function: Runs once at the start, used to set initial environment properties
+  void move() {// -- code below this line
+  
+
+  } // -- don't delete this bracket
+
+  
+  void display() {// -- code below this line
+  
+
+
+  } // -- don't delete this bracket
+
+
+} // -- don't delete this bracket
+
+
+// ------------------------------------------------------
+
+// Global Variabls to store xPosition, yPosition and Ant 
+
+
+
 void setup() {
-}
+// -- code below this line
 
-// draw function: Runs continuously after setup, used for animation and continuously updating the canvas
+} // -- don't delete this bracket
+
+
 void draw() {
-}
+// -- code below this line
 
-// mousePressed function: Called once after every time the mouse is pressed
+} // -- don't delete this bracket
+
 void mousePressed() {
-}
+// -- code below this line
 
-// keyPressed function: Called once after a key on the keyboard is pressed
+
+} // -- don't delete this bracket
+
+
 void keyPressed() {
-}
+// -- code below this line
+
+} // -- don't delete this bracket
