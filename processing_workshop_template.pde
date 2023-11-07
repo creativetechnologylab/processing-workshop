@@ -1,20 +1,20 @@
 // ------------------------------------------------------
  
-class Ant {// -- code below this line
+class Ant {
 
-  Ant() {// -- code below this line
+  Ant() {
   
 
   } // -- don't delete this bracket
 
 
-  void move() {// -- code below this line
+  void move() {
   
 
   } // -- don't delete this bracket
 
   
-  void display() {// -- code below this line
+  void display() {
   
 
 
@@ -30,18 +30,18 @@ class Ant {// -- code below this line
 
 
 
-void setup() {// -- code below this line
+void setup() {
 
 
 } // -- don't delete this bracket
 
 
-void draw() {// -- code below this line
+void draw() {
 
 
 } // -- don't delete this bracket
 
-void mousePressed() {// -- code below this line
+void mousePressed() {
 
 
 
@@ -49,6 +49,6 @@ void mousePressed() {// -- code below this line
 
 
 void keyPressed() {
-// -- code below this line
+
 
 } // -- don't delete this bracket
