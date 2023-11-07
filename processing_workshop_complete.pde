@@ -47,6 +47,12 @@ class Ant {
     } else {
       y+= random(-3, 3);
     }
+
+    if(x>width) x = 0;
+    if(y>height) y = 0;
+    if(y<0) y = height;
+    if(x<0) x = width;
+    
   }
 
   // display method: Defines how the ant should be drawn on the canvas
