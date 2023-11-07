@@ -3,7 +3,7 @@ class Ant {
   
   float x, y;
   float size;
-  color antColor;
+  color bodyColor;
 
 
   /*
@@ -35,7 +35,7 @@ class Ant {
     x = inputX;
     y = inputY;
     size = 10;
-    antColor = color(91, 197, 255);
+    bodyColor = color(91, 197, 255);
   }
 
   // move method: Defines the logic to update the ant's position
@@ -98,7 +98,7 @@ void mousePressed() {
     float g = random(127, 255);
     float b = random(127, 255);
     float size = random(5, 20);
-    ants.antColor = color(r, g, b);
+    ants.bodyColor = color(r, g, b);
     ants.size = size;
   }
 }
