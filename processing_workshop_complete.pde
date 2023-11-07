@@ -13,9 +13,9 @@ class Ant {
 
   // move method: Defines the logic to update the ant's position
   void move() {
-    int choice = int(random(2));
+    float choice = random();
 
-    if (choice == 0) {
+    if (choice > 0.5) {
       x+= random(-3, 3);
     } else {
       y+= random(-3, 3);
