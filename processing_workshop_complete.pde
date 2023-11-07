@@ -19,6 +19,7 @@ class Ant {
 
   This only helps define the RELATIONSHIP beween class member variables (x) and constructor arguments (inputX).
   The PURPOSE of constructor arguments is to create new ants from a template but with a little individuality.
+  Anything which is not an input variable is given to each ant , exactly the same. 
   For example, every ant , when it is created, will be made with the same size (10) and color(91,197,255).
 
   An excercise would be to consider: 
