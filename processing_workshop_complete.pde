@@ -59,7 +59,7 @@ class Ant {
 
 // -- all global variabls -- //
 
-Ant oneAnt;
+Ant randy;
 Ant [] antHill;
 float xPosition, yPosition;
 
@@ -72,7 +72,7 @@ void setup() {
   background(127,197,255);
   xPosition = width /2;
   yPosition = height/2;
-  oneAnt = new Ant(xPosition, yPosition);
+  randy = new Ant(xPosition, yPosition);
   antHill = new Ant[10];
 
   for (int i = 0; i < antHill.length; i++) {
@@ -87,8 +87,8 @@ void draw() {
     ants.display();
     ants.move();
   }
-  oneAnt.display();
-  oneAnt.move();
+  randy.display();
+  randy.move();
 }
 
 // mousePressed function: Called once after every time the mouse is pressed
@@ -98,7 +98,7 @@ void mousePressed() {
     float g = random(127, 255);
     float b = random(127, 255);
     float size = random(5, 20);
-    ants.c = color(r, g, b);
+    ants.antColor = color(r, g, b);
     ants.size = size;
   }
 }
