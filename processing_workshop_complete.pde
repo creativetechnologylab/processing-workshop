@@ -1,8 +1,25 @@
 // The Ant class encapsulates the properties and behaviors of an ant.
 class Ant {
+  
   float x, y;
   float size;
   color antColor;
+
+
+  /*
+  This is a helpful analogy to describe the relationship between class member variables (above) and constructor
+  arguments (below). 
+
+  The constructor arguments inputX and inputY are the short term memory of the ant and it is passed to the long term memory
+  x and y in the class. The class is like the brain of the ant that defines how it should move and what colour it 
+  should have. Depending on different inputs to the body, the brain responds in different ways. We may change direction
+  or colour, for example. To modify our behaviour we have to pass the events that happen in short term memory
+  by storing it in long term memory. This is what we do when we say the x = inputX. We say the short-term
+  memory inputX is stored in the long-term memory x. 
+
+  */
+
+
   // Constructor: Initializes ant properties such as position and color
   Ant(float inputX, float inputY) {
     x = inputX;
