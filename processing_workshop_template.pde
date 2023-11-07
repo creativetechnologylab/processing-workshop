@@ -1,6 +1,6 @@
 // ------------------------------------------------------
  
-class Ant {
+class Ant {// -- code below this line
 
   Ant() {// -- code below this line
   
