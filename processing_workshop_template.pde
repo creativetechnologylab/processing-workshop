@@ -30,19 +30,19 @@ class Ant {
 
 
 
-void setup() {
-// -- code below this line
+void setup() {// -- code below this line
+
 
 } // -- don't delete this bracket
 
 
-void draw() {
-// -- code below this line
+void draw() {// -- code below this line
+
 
 } // -- don't delete this bracket
 
-void mousePressed() {
-// -- code below this line
+void mousePressed() {// -- code below this line
+
 
 
 } // -- don't delete this bracket
