@@ -26,7 +26,7 @@ class Ant {// -- code below this line
 
 // ------------------------------------------------------
 
-// Global Variabls to store xPosition, yPosition and Ant 
+// Global Variabls to store xPosition, yPosition , Ant and antHill  
 
 
 
