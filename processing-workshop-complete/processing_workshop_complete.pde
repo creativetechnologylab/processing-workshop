@@ -36,6 +36,17 @@ class Ant {
     y = inputY;
     size = 10;
     bodyColor = color(91, 197, 255);
+    
+    
+    /*
+    size and bodyColor are "hard-coded". Every ant is going to be born at size 10
+    and red.
+    this may be desirable but it could also be expanded.
+    each ant could be born with a random color and size.
+    or we could provide inputs for color and size which we use 
+    when each ant is "born". 
+    */
+    
   }
 
   // move method: Defines the logic to update the ant's position
@@ -82,6 +93,15 @@ class Ant {
 
 Ant randy;
 Ant [] antHill;
+
+/*
+
+the antHill is an array type data structure.
+it is like a block of flats for Ant objects.
+each ant has a room e.g. antHill[0] is the first room , antHill[1] is the second room ... 
+
+
+*/
 float xPosition, yPosition;
 
 // --------------------------//
@@ -99,6 +119,12 @@ void setup() {
   for (int i = 0; i < antHill.length; i++) {
     antHill[i] = new Ant(xPosition, yPosition);
   }
+  
+  /*
+  in the loop we are "moving in" all the ants to their room.
+  the counter "i" keeps track of what "room" we are in e.g. antHill[i] == antHill[0] for the first cycle of the loop.
+  we then say "put" ( using "=" sign) a new Ant() into this room. 
+  */
 }
 
 // draw function: Runs continuously after setup, used for animation and continuously updating the canvas
