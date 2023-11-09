@@ -48,8 +48,8 @@ The `move()` method uses `random()` and `if` statements to give ants a random di
 
 ```java
 void move() {
-  int choice = int(random(2));
-  if (choice == 0) {
+  float choice = random(1);
+  if (choice > 0.5) {
     x += random(-3, 3);
   } else {
     y += random(-3, 3);
