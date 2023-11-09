@@ -40,24 +40,39 @@ class Ant {
 
   // move method: Defines the logic to update the ant's position
   void move() {
-    float choice = random();
+    float choice = random(1);
 
-    if (choice > 0.5) {
+    if (choice < 0.5) {
       x+= random(-3, 3);
     } else {
       y+= random(-3, 3);
     }
-
+    
+    /*
+    the choice < 0.5 gives "TRUE" 50% of the time
+    because 0.5 == 50%
+    we can manipulate the direction of the ant by changing this value 
+    if choice < 0.9 for example means the ant has a 90% chance of moving left or right
+    and only 10% chance of moving up or down. 
+    */
+  
     if(x>width) x = 0;
     if(y>height) y = 0;
     if(y<0) y = height;
     if(x<0) x = width;
     
+    /*
+    the conditional statements above keep the ants within the boarder of the canvas.
+    if the ant goes to far right, over the width or height (x > 400, y > 400) then we reset the ant to the other end.
+    like wise, if the ant goes to far left, behind the width or height (x < 0, y < 0), then we wrap it around to the other end. 
+    
+    */
+    
   }
 
   // display method: Defines how the ant should be drawn on the canvas
   void display() {
-    fill(antColor);
+    fill(bodyColor);
     circle(x, y, size);
   }
 }
@@ -107,6 +122,14 @@ void mousePressed() {
     ants.bodyColor = color(r, g, b);
     ants.size = size;
   }
+  
+  /*
+  challenge : change this "for loop" into the other "for loop".
+  the advantage of the other for loop would be in saying you only
+  want to affect certain ants with a certain color range
+  i.e. antHill[0] to antHill[3] could all be red and antHill[4] could be blue, 
+  and antHill[5] to antHill[9] could be green. 
+  */
 }
 
 // keyPressed function: Called once after a key on the keyboard is pressed
